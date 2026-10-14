@@ -1,20 +1,54 @@
-# Fill the three responsibility slots per role; empty slots are hidden.
+# Historical details from the older CV; current titles and dates follow LinkedIn.
+# Cleverdist and CERN retain three empty responsibility slots for your updates.
 title: Ingeniero de software e inteligencia artificial
 summary: Ingeniero de software e inteligencia artificial con experiencia en
-  Cleverdist, CERN y Merkle EMEA. Estudié ingeniería informática en la
-  Universidad de Oviedo e inteligencia artificial en la VIU. A través de
-  Erasmus+, participé en investigación sobre procesamiento del lenguaje natural
-  en la Universidad Politécnica de Wrocław.
+  Cleverdist, CERN y Merkle EMEA. Mi trayectoria incluye desarrollo frontend y
+  backend para SKY UK, investigación en procesamiento del lenguaje natural
+  basado en inteligencia artificial y preparación de datos para entrenar
+  modelos. Estudié ingeniería del software en la Universidad de Oviedo e
+  inteligencia artificial en la VIU.
 skills:
-  - group: Ingeniería de software
+  - group: Lenguajes de programación
     items:
-      - Desarrollo de software
+      - Java
+      - Python
+      - JavaScript
+      - SQL
+      - HTML
+      - C
+      - C++
+      - C#
       - CTRL Language
+  - group: Frameworks y herramientas
+    items:
+      - Spring
+      - Spring Boot
+      - React
+      - Node.js
+      - jBPM
+      - Docker
+      - Git
+      - GitHub
+      - Visual Studio Code
+      - IntelliJ
+  - group: Prácticas de ingeniería
+    items:
+      - Programación orientada a objetos
+      - Patrones de diseño
+      - Pruebas de software
+      - Depuración
+      - Agile
+      - Scrum
   - group: Inteligencia artificial
     items:
       - Inteligencia artificial
       - Procesamiento del lenguaje natural
+      - Preparación de datos
       - Análisis heurístico
+  - group: Certificaciones de inglés
+    items:
+      - Cambridge Advanced — C1 (2017)
+      - Cambridge First Certificate — B2 (2016)
 experience:
   cleverdist:
     role: Programador informático
@@ -31,15 +65,18 @@ experience:
   merkle:
     role: Programador analista
     achievements:
-      - ''
-      - ''
-      - ''
+      - Desarrollo de aplicaciones web para SKY UK, tanto frontend como backend.
+      - Trabajo con Spring, React, jBPM, Java, JavaScript y SQL.
+      - Colaboración mediante metodologías Agile y Scrum.
   wroclaw:
     role: Estudiante investigador
     achievements:
-      - ''
-      - ''
-      - ''
+      - Investigación en procesamiento del lenguaje natural basado en
+        inteligencia artificial.
+      - Recopilación y limpieza de datos para el entrenamiento de modelos de
+        inteligencia artificial.
+      - Implementación de métodos de análisis de texto para la investigación en
+        procesamiento del lenguaje natural.
 degrees:
   viu-ai:
     description:
@@ -47,8 +84,10 @@ degrees:
       julio de 2025.
   oviedo:
     description:
-      Estudios de ingeniería del software en la Universidad de Oviedo, de
-      2017 a 2021.
+      Estudios de ingeniería del software, con una estancia Erasmus en
+      Polonia (2019–2020), un proyecto colaborativo de inteligencia artificial
+      para un juego y un trabajo de fin de grado sobre inteligencia artificial y
+      procesamiento del lenguaje natural.
 ui:
   navLabel: Secciones del CV
   languageLabel: Elegir idioma
