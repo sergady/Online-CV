@@ -364,7 +364,7 @@ footer {
     display: block;
   }
   .cv-section {
-    padding: 12px 0;
+    padding: 8px 0;
     scroll-margin: 0;
   }
   h2 {
@@ -384,8 +384,8 @@ footer {
     line-height: 1.45;
   }
   .entry + .entry {
-    margin-top: 16px;
-    padding-top: 16px;
+    margin-top: 12px;
+    padding-top: 12px;
   }
   .skill-groups {
     gap: 14px;
@@ -402,6 +402,9 @@ footer {
   }
   .achievements li {
     margin-bottom: 4px;
+  }
+  .summary {
+    line-height: 1.45;
   }
   .summary,
   .achievements,
@@ -422,8 +425,7 @@ footer {
     display: none;
   }
   footer {
-    font-size: 8pt;
-    padding-top: 15px;
+    display: none;
   }
   .skill-list li {
     font-size: 9pt;

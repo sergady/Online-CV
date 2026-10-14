@@ -1,5 +1,4 @@
 # Historical details from the older CV; current titles and dates follow LinkedIn.
-# Cleverdist and CERN retain three empty responsibility slots for your updates.
 title: Software and AI Engineer
 summary: Software and AI Engineer with experience at Cleverdist, CERN, and
   Merkle EMEA. My background includes frontend and backend development for SKY
@@ -52,15 +51,15 @@ experience:
   cleverdist:
     role: Software Developer
     achievements:
-      - ''
-      - ''
-      - ''
+      - Consulting work for Skyguide, working to create a new monitoring project for Air Traffic Control.
+      - Working End to End on a whole monitoring system.
+      - Managing customer necessities and providig support for the app developed.
   cern:
     role: Software and Framework Developer
     achievements:
-      - ''
-      - ''
-      - ''
+      - Developing a propietary library for industrial control.
+      - Gathering requirements from physics and scientific experts on their projects necessities.
+      - Experiencing the vanguard experiments and projects at CERN.
   merkle:
     role: Programmer Analyst
     achievements:

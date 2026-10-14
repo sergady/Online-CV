@@ -1,5 +1,4 @@
 # Historical details from the older CV; current titles and dates follow LinkedIn.
-# Cleverdist and CERN retain three empty responsibility slots for your updates.
 title: Ingénieur logiciel et intelligence artificielle
 summary: Ingénieur logiciel et intelligence artificielle, avec une expérience
   chez Cleverdist, au CERN et chez Merkle EMEA. Mon parcours comprend le
@@ -53,15 +52,15 @@ experience:
   cleverdist:
     role: Développeur logiciel
     achievements:
-      - ''
-      - ''
-      - ''
+      - Mission de conseil pour Skyguide visant à créer un nouveau projet de supervision du contrôle du trafic aérien.
+      - Développement de bout en bout d’un système complet de supervision.
+      - Prise en compte des besoins du client et support de l’application développée.
   cern:
     role: Développeur logiciel et de frameworks
     achievements:
-      - ''
-      - ''
-      - ''
+      - Développement d’une bibliothèque propriétaire pour le contrôle industriel.
+      - Recueil des besoins d’experts en physique et d’autres disciplines scientifiques pour leurs projets.
+      - Découverte des expériences et projets de pointe du CERN.
   merkle:
     role: Analyste-programmeur
     achievements:

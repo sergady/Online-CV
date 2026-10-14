@@ -19,6 +19,16 @@ for (const version of versions) {
     await expect(
       page.getByRole('link', { name: version.download }),
     ).toHaveAttribute('href', `/Online-CV/cv-${version.lang}.pdf`);
+    expect(
+      await page
+        .locator('.cv-content > section')
+        .evaluateAll((sections) => sections.map((section) => section.id)),
+    ).toEqual(['summary', 'experience', 'skills', 'degrees', 'contact']);
+    expect(
+      await page
+        .locator('.section-nav a')
+        .evaluateAll((links) => links.map((link) => link.getAttribute('href'))),
+    ).toEqual(['#summary', '#experience', '#skills', '#degrees', '#contact']);
     const pdf = await request.get(`/Online-CV/cv-${version.lang}.pdf`);
     expect(pdf.ok()).toBeTruthy();
     expect((await pdf.body()).subarray(0, 5).toString()).toBe('%PDF-');

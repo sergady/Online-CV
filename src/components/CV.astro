@@ -17,7 +17,7 @@ const { lang } = Astro.props;
 const copy = locales[lang];
 const ui = copy.ui;
 const canonical = `https://sergady.github.io${localePath(lang)}`;
-const sections = ['summary', 'skills', 'experience', 'degrees', 'contact'];
+const sections = ['summary', 'experience', 'skills', 'degrees', 'contact'];
 const experience = [...profile.experience].sort((a, b) =>
   b.start.localeCompare(a.start),
 );
@@ -114,25 +114,6 @@ const degrees = [...profile.degrees].sort((a, b) =>
               {copy.summary || ui.pending}
             </p>
           </section>
-          <section id="skills" class="cv-section">
-            <h2>{ui.skills}</h2>
-            {copy.skills.length ? (
-              <div class="skill-groups">
-                {copy.skills.map((group) => (
-                  <div>
-                    <h3>{group.group}</h3>
-                    <ul class="skill-list">
-                      {group.items.map((item) => (
-                        <li>{item}</li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <p class="pending">{ui.pending}</p>
-            )}
-          </section>
           <section id="experience" class="cv-section">
             <h2>{ui.experience}</h2>
             {experience.length ? (
@@ -151,6 +132,25 @@ const degrees = [...profile.degrees].sort((a, b) =>
                   </ul>
                 </article>
               ))
+            ) : (
+              <p class="pending">{ui.pending}</p>
+            )}
+          </section>
+          <section id="skills" class="cv-section">
+            <h2>{ui.skills}</h2>
+            {copy.skills.length ? (
+              <div class="skill-groups">
+                {copy.skills.map((group) => (
+                  <div>
+                    <h3>{group.group}</h3>
+                    <ul class="skill-list">
+                      {group.items.map((item) => (
+                        <li>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
             ) : (
               <p class="pending">{ui.pending}</p>
             )}
