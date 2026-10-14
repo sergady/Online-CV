@@ -12,6 +12,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      publish_ready: ${{ steps.release.outputs.ready }}
     steps:
       - uses: actions/checkout@v6
       - uses: pnpm/action-setup@v4
@@ -32,15 +34,15 @@ jobs:
         with:
           name: cv-preview
           path: dist
-      - name: Check publication readiness
-        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-        run: pnpm validate:release
+      - name: Determine publication readiness
+        id: release
+        run: node scripts/validate-release.mjs --ci >> "$GITHUB_OUTPUT"
       - uses: actions/upload-pages-artifact@v4
-        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && steps.release.outputs.ready == 'true'
         with:
           path: dist
   deploy:
-    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && needs.build.outputs.publish_ready == 'true'
     needs: build
     runs-on: ubuntu-latest
     permissions:

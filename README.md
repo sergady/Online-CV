@@ -5,8 +5,13 @@ and French have separate URLs. Content is independent of layout and CSS.
 
 ## Status
 
-Visible career facts from the supplied LinkedIn PDF have been imported. The degree labels and public email follow your instructions. Three blank responsibility slots per role and editable degree descriptions are ready for updates. Translations remain pending final review. `publishReady: false` prevents public
-deployment. Draft pages display a banner and use `noindex`.
+Publication is enabled. The CV includes the visible career facts from the supplied
+LinkedIn PDF and your requested degree labels and public email. Three blank
+responsibility slots per role and editable study descriptions are ready for
+updates. Empty slots are hidden on the website and in the PDFs.
+
+To preview future unfinished changes without deployment, set `publishReady: false`.
+A valid draft build passes CI and skips deployment; invalid content still fails.
 
 ## Editing content
 
