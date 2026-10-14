@@ -1,19 +1,53 @@
-# Fill the three responsibility slots per role; empty slots are hidden.
+# Historical details from the older CV; current titles and dates follow LinkedIn.
+# Cleverdist and CERN retain three empty responsibility slots for your updates.
 title: Software and AI Engineer
 summary: Software and AI Engineer with experience at Cleverdist, CERN, and
-  Merkle EMEA. I studied computer engineering at the University of Oviedo and
-  artificial intelligence at VIU. Through Erasmus+, I participated in natural
-  language processing research at Wrocław University of Science and Technology.
+  Merkle EMEA. My background includes frontend and backend development for SKY
+  UK, AI-based natural language processing research, and data preparation for
+  model training. I studied software engineering at the University of Oviedo and
+  artificial intelligence at VIU.
 skills:
-  - group: Software engineering
+  - group: Programming languages
     items:
-      - Software development
+      - Java
+      - Python
+      - JavaScript
+      - SQL
+      - HTML
+      - C
+      - C++
+      - C#
       - CTRL Language
+  - group: Frameworks and tools
+    items:
+      - Spring
+      - Spring Boot
+      - React
+      - Node.js
+      - jBPM
+      - Docker
+      - Git
+      - GitHub
+      - Visual Studio Code
+      - IntelliJ
+  - group: Engineering practices
+    items:
+      - Object-oriented programming
+      - Design patterns
+      - Testing
+      - Debugging
+      - Agile
+      - Scrum
   - group: Artificial intelligence
     items:
       - Artificial intelligence
       - Natural language processing
+      - Data preparation
       - Heuristic analysis
+  - group: English qualifications
+    items:
+      - Cambridge Advanced — C1 (2017)
+      - Cambridge First Certificate — B2 (2016)
 experience:
   cleverdist:
     role: Software Developer
@@ -30,22 +64,22 @@ experience:
   merkle:
     role: Programmer Analyst
     achievements:
-      - ''
-      - ''
-      - ''
+      - Developed web applications for SKY UK across frontend and backend.
+      - Worked with Spring, React, jBPM, Java, JavaScript, and SQL.
+      - Collaborated using Agile and Scrum.
   wroclaw:
     role: Student Researcher
     achievements:
-      - ''
-      - ''
-      - ''
+      - Researched AI-based natural language processing.
+      - Collected and cleaned data for AI training.
+      - Implemented text analysis methods for NLP research.
 degrees:
   viu-ai:
     description: Artificial intelligence studies at VIU, from October 2024 to July 2025.
   oviedo:
-    description:
-      Software engineering studies at the University of Oviedo, from 2017
-      to 2021.
+    description: Software engineering studies, including an Erasmus exchange in
+      Poland (2019–2020), a collaborative game AI project, and a final-year
+      project on artificial intelligence and natural language processing.
 ui:
   navLabel: CV sections
   languageLabel: Choose language

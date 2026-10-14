@@ -1,20 +1,54 @@
-# Fill the three responsibility slots per role; empty slots are hidden.
+# Historical details from the older CV; current titles and dates follow LinkedIn.
+# Cleverdist and CERN retain three empty responsibility slots for your updates.
 title: Ingénieur logiciel et intelligence artificielle
 summary: Ingénieur logiciel et intelligence artificielle, avec une expérience
-  chez Cleverdist, au CERN et chez Merkle EMEA. J’ai étudié l’informatique à
-  l’Université d’Oviedo et l’intelligence artificielle à la VIU. Dans le cadre
-  d’Erasmus+, j’ai participé à des recherches en traitement du langage naturel à
-  l’École polytechnique de Wrocław.
+  chez Cleverdist, au CERN et chez Merkle EMEA. Mon parcours comprend le
+  développement frontend et backend pour SKY UK, la recherche en traitement du
+  langage naturel fondé sur l’intelligence artificielle et la préparation de
+  données pour entraîner des modèles. J’ai étudié le génie logiciel à
+  l’Université d’Oviedo et l’intelligence artificielle à la VIU.
 skills:
-  - group: Génie logiciel
+  - group: Langages de programmation
     items:
-      - Développement logiciel
+      - Java
+      - Python
+      - JavaScript
+      - SQL
+      - HTML
+      - C
+      - C++
+      - C#
       - CTRL Language
+  - group: Frameworks et outils
+    items:
+      - Spring
+      - Spring Boot
+      - React
+      - Node.js
+      - jBPM
+      - Docker
+      - Git
+      - GitHub
+      - Visual Studio Code
+      - IntelliJ
+  - group: Pratiques d’ingénierie
+    items:
+      - Programmation orientée objet
+      - Patrons de conception
+      - Tests logiciels
+      - Débogage
+      - Agile
+      - Scrum
   - group: Intelligence artificielle
     items:
       - Intelligence artificielle
       - Traitement du langage naturel
+      - Préparation des données
       - Analyse heuristique
+  - group: Certifications d’anglais
+    items:
+      - Cambridge Advanced — C1 (2017)
+      - Cambridge First Certificate — B2 (2016)
 experience:
   cleverdist:
     role: Développeur logiciel
@@ -31,21 +65,27 @@ experience:
   merkle:
     role: Analyste-programmeur
     achievements:
-      - ''
-      - ''
-      - ''
+      - Développement d’applications web pour SKY UK, côté frontend et backend.
+      - Utilisation de Spring, React, jBPM, Java, JavaScript et SQL.
+      - Collaboration avec les méthodes Agile et Scrum.
   wroclaw:
     role: Étudiant chercheur
     achievements:
-      - ''
-      - ''
-      - ''
+      - Recherche en traitement du langage naturel fondé sur l’intelligence
+        artificielle.
+      - Collecte et nettoyage de données pour l’entraînement de modèles
+        d’intelligence artificielle.
+      - Implémentation de méthodes d’analyse de texte pour la recherche en
+        traitement du langage naturel.
 degrees:
   viu-ai:
     description: Études en intelligence artificielle à la VIU, d’octobre 2024 à
       juillet 2025.
   oviedo:
-    description: Études en génie logiciel à l’Université d’Oviedo, de 2017 à 2021.
+    description: Études en génie logiciel, avec un échange Erasmus en Pologne
+      (2019–2020), un projet collaboratif d’intelligence artificielle pour un
+      jeu et un projet de fin d’études sur l’intelligence artificielle et le
+      traitement du langage naturel.
 ui:
   navLabel: Sections du CV
   languageLabel: Choisir la langue
