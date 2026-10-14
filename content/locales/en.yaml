@@ -1,3 +1,4 @@
+# Fill the three responsibility slots per role; empty slots are hidden.
 title: Software and AI Engineer
 summary: Software and AI Engineer with experience at Cleverdist, CERN, and
   Merkle EMEA. I studied computer engineering at the University of Oviedo and
@@ -16,22 +17,35 @@ skills:
 experience:
   cleverdist:
     role: Software Developer
-    achievements: []
+    achievements:
+      - ''
+      - ''
+      - ''
   cern:
     role: Software and Framework Developer
-    achievements: []
+    achievements:
+      - ''
+      - ''
+      - ''
   merkle:
     role: Programmer Analyst
-    achievements: []
+    achievements:
+      - ''
+      - ''
+      - ''
   wroclaw:
     role: Student Researcher
     achievements:
-      - Participated in natural language processing research through Erasmus+.
+      - ''
+      - ''
+      - ''
 degrees:
   viu-ai:
-    description: Studies in artificial intelligence.
+    description: Artificial intelligence studies at VIU, from October 2024 to July 2025.
   oviedo:
-    description: Undergraduate studies in computer engineering.
+    description:
+      Software engineering studies at the University of Oviedo, from 2017
+      to 2021.
 ui:
   navLabel: CV sections
   languageLabel: Choose language

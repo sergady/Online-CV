@@ -1,3 +1,4 @@
+# Fill the three responsibility slots per role; empty slots are hidden.
 title: Ingeniero de software e inteligencia artificial
 summary: Ingeniero de software e inteligencia artificial con experiencia en
   Cleverdist, CERN y Merkle EMEA. Estudié ingeniería informática en la
@@ -17,23 +18,37 @@ skills:
 experience:
   cleverdist:
     role: Programador informático
-    achievements: []
+    achievements:
+      - ''
+      - ''
+      - ''
   cern:
     role: Programador y desarrollador de frameworks
-    achievements: []
+    achievements:
+      - ''
+      - ''
+      - ''
   merkle:
     role: Programador analista
-    achievements: []
+    achievements:
+      - ''
+      - ''
+      - ''
   wroclaw:
     role: Estudiante investigador
     achievements:
-      - Participación en investigación sobre procesamiento del lenguaje natural
-        a través de Erasmus+.
+      - ''
+      - ''
+      - ''
 degrees:
   viu-ai:
-    description: Estudios en inteligencia artificial.
+    description:
+      Estudios en inteligencia artificial en la VIU, de octubre de 2024 a
+      julio de 2025.
   oviedo:
-    description: Estudios de grado en ingeniería informática.
+    description:
+      Estudios de ingeniería del software en la Universidad de Oviedo, de
+      2017 a 2021.
 ui:
   navLabel: Secciones del CV
   languageLabel: Elegir idioma

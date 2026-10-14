@@ -1,10 +1,10 @@
-# Draft imported from the supplied LinkedIn PDF. Confirm exact diploma titles before publication.
+# Publish after reviewing all three language versions.
 publishReady: false
 name: Sergio García Díaz
 links:
   linkedin: https://www.linkedin.com/in/sergiogarc%C3%ADad%C3%ADaz/
   github: https://github.com/sergady
-email: ''
+email: garcia.diaz.sergio.99@gmail.com
 location: Saint-Genis-Pouilly, France
 experience:
   - id: cleverdist
@@ -31,6 +31,6 @@ degrees:
     end: 2025-07
   - id: oviedo
     university: Universidad de Oviedo
-    officialTitle: Grado en Ingeniería, Informática
+    officialTitle: Software Engineer
     start: '2017'
     end: '2021'

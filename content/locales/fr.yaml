@@ -1,3 +1,4 @@
+# Fill the three responsibility slots per role; empty slots are hidden.
 title: Ingénieur logiciel et intelligence artificielle
 summary: Ingénieur logiciel et intelligence artificielle, avec une expérience
   chez Cleverdist, au CERN et chez Merkle EMEA. J’ai étudié l’informatique à
@@ -17,23 +18,34 @@ skills:
 experience:
   cleverdist:
     role: Développeur logiciel
-    achievements: []
+    achievements:
+      - ''
+      - ''
+      - ''
   cern:
     role: Développeur logiciel et de frameworks
-    achievements: []
+    achievements:
+      - ''
+      - ''
+      - ''
   merkle:
     role: Analyste-programmeur
-    achievements: []
+    achievements:
+      - ''
+      - ''
+      - ''
   wroclaw:
     role: Étudiant chercheur
     achievements:
-      - Participation à des recherches en traitement du langage naturel dans le
-        cadre d’Erasmus+.
+      - ''
+      - ''
+      - ''
 degrees:
   viu-ai:
-    description: Études en intelligence artificielle.
+    description: Études en intelligence artificielle à la VIU, d’octobre 2024 à
+      juillet 2025.
   oviedo:
-    description: Études universitaires en informatique.
+    description: Études en génie logiciel à l’Université d’Oviedo, de 2017 à 2021.
 ui:
   navLabel: Sections du CV
   languageLabel: Choisir la langue
