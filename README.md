@@ -5,7 +5,7 @@ and French have separate URLs. Content is independent of layout and CSS.
 
 ## Status
 
-Career content is pending import and review. `publishReady: false` prevents public
+Visible career facts from the supplied LinkedIn PDF have been imported. Exact diploma titles, hidden profile entries, and detailed role achievements remain pending review. `publishReady: false` prevents public
 deployment. Draft pages display a banner and use `noindex`.
 
 ## Editing content
@@ -20,7 +20,7 @@ Edit content files in GitHub's web editor, proposing a branch and pull request.
 
 Experience entries require `id`, `company`, `start`, and `end`. Dates are quoted
 `YYYY` or `YYYY-MM`; `end: null` means current. Each language file must contain
-that ID with a `role` and an `achievements` list. Degree entries require `id`,
+that ID with a `role` and an `achievements` list (use `[]` if details are not yet supplied). Degree entries require `id`,
 `university`, `officialTitle`, `start`, and `end`, plus a matching localized
 `description` (which may be empty). Preserve official degree titles exactly.
 

@@ -103,3 +103,23 @@ test('Publication readiness cannot bypass missing career content', () => {
   assert.notEqual(result.status, 0);
   assert.match(result.stderr, /required before publication/);
 });
+
+test('A verified role may omit achievements until the user supplies them', () => {
+  const result = validateChangedContent((dir) => {
+    const profilePath = `${dir}/content/profile.yaml`;
+    const profile = parse(readFileSync(profilePath, 'utf8'));
+    profile.experience = [
+      { id: 'verified-role', company: 'Example', start: '2024-01', end: null },
+    ];
+    writeFileSync(profilePath, stringify(profile));
+    for (const lang of ['en', 'es', 'fr']) {
+      const path = `${dir}/content/locales/${lang}.yaml`;
+      const content = parse(readFileSync(path, 'utf8'));
+      content.experience = {
+        'verified-role': { role: 'Software developer', achievements: [] },
+      };
+      writeFileSync(path, stringify(content));
+    }
+  });
+  assert.equal(result.status, 0, result.stderr);
+});

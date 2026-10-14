@@ -50,7 +50,7 @@ const localeSchema = z.object({
   ),
   experience: z.record(
     z.string(),
-    z.object({ role: nonempty, achievements: z.array(nonempty).min(1) }),
+    z.object({ role: nonempty, achievements: z.array(nonempty) }),
   ),
   degrees: z.record(z.string(), z.object({ description: z.string() })),
   ui: z.object(

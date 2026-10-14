@@ -1,17 +1,37 @@
 title: Software and AI Engineer
-summary: ''
-skills: []
-# Add one translation per shared experience/degree ID.
-# experience:
-#   employer-role:
-#     role: Software Engineer
-#     achievements:
-#       - A verified responsibility or achievement.
-# degrees:
-#   university-degree:
-#     description: Optional explanation of the official degree.
-experience: {}
-degrees: {}
+summary: Software and AI Engineer with experience at Cleverdist, CERN, and
+  Merkle EMEA. I studied computer engineering at the University of Oviedo and
+  artificial intelligence at VIU. Through Erasmus+, I participated in natural
+  language processing research at Wrocław University of Science and Technology.
+skills:
+  - group: Software engineering
+    items:
+      - Software development
+      - CTRL Language
+  - group: Artificial intelligence
+    items:
+      - Artificial intelligence
+      - Natural language processing
+      - Heuristic analysis
+experience:
+  cleverdist:
+    role: Software Developer
+    achievements: []
+  cern:
+    role: Software and Framework Developer
+    achievements: []
+  merkle:
+    role: Programmer Analyst
+    achievements: []
+  wroclaw:
+    role: Student Researcher
+    achievements:
+      - Participated in natural language processing research through Erasmus+.
+degrees:
+  viu-ai:
+    description: Studies in artificial intelligence.
+  oviedo:
+    description: Undergraduate studies in computer engineering.
 ui:
   navLabel: CV sections
   languageLabel: Choose language
@@ -25,5 +45,5 @@ ui:
   download: Download CV
   present: Present
   pending: Career details will be added after reviewing the source CV.
-  preview: Draft preview — career content pending review
+  preview: Draft preview — content awaiting your review
   footer: Software and AI Engineer

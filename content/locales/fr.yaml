@@ -1,8 +1,39 @@
 title: Ingénieur logiciel et intelligence artificielle
-summary: ''
-skills: []
-experience: {}
-degrees: {}
+summary: Ingénieur logiciel et intelligence artificielle, avec une expérience
+  chez Cleverdist, au CERN et chez Merkle EMEA. J’ai étudié l’informatique à
+  l’Université d’Oviedo et l’intelligence artificielle à la VIU. Dans le cadre
+  d’Erasmus+, j’ai participé à des recherches en traitement du langage naturel à
+  l’École polytechnique de Wrocław.
+skills:
+  - group: Génie logiciel
+    items:
+      - Développement logiciel
+      - CTRL Language
+  - group: Intelligence artificielle
+    items:
+      - Intelligence artificielle
+      - Traitement du langage naturel
+      - Analyse heuristique
+experience:
+  cleverdist:
+    role: Développeur logiciel
+    achievements: []
+  cern:
+    role: Développeur logiciel et de frameworks
+    achievements: []
+  merkle:
+    role: Analyste-programmeur
+    achievements: []
+  wroclaw:
+    role: Étudiant chercheur
+    achievements:
+      - Participation à des recherches en traitement du langage naturel dans le
+        cadre d’Erasmus+.
+degrees:
+  viu-ai:
+    description: Études en intelligence artificielle.
+  oviedo:
+    description: Études universitaires en informatique.
 ui:
   navLabel: Sections du CV
   languageLabel: Choisir la langue
@@ -15,6 +46,8 @@ ui:
   contactIntro: Consultez mon profil professionnel ou découvrez mon travail.
   download: Télécharger le CV
   present: Aujourd’hui
-  pending: Les informations professionnelles seront ajoutées après vérification du CV source.
-  preview: Aperçu — contenu professionnel en attente de vérification
+  pending:
+    Les informations professionnelles seront ajoutées après vérification du
+    CV source.
+  preview: Aperçu — contenu en attente de votre validation
   footer: Ingénieur logiciel et intelligence artificielle

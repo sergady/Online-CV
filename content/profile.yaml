@@ -1,23 +1,36 @@
-# Only set publishReady to true after all three language versions are reviewed.
+# Draft imported from the supplied LinkedIn PDF. Confirm exact diploma titles before publication.
 publishReady: false
 name: Sergio García Díaz
 links:
   linkedin: https://www.linkedin.com/in/sergiogarc%C3%ADad%C3%ADaz/
   github: https://github.com/sergady
-# Optional: add a public contact email or city/country here.
 email: ''
-location: ''
-# Entries use stable IDs shared by every language file.
-# experience:
-#   - id: employer-role
-#     company: Employer name
-#     start: "2022-03"
-#     end: null # null means current role
-# degrees:
-#   - id: university-degree
-#     university: University name
-#     officialTitle: Exact official degree title
-#     start: "2015"
-#     end: "2019"
-experience: []
-degrees: []
+location: Saint-Genis-Pouilly, France
+experience:
+  - id: cleverdist
+    company: Cleverdist
+    start: 2024-01
+    end: null
+  - id: cern
+    company: CERN
+    start: 2022-08
+    end: 2023-12
+  - id: merkle
+    company: Merkle EMEA
+    start: 2021-10
+    end: 2022-07
+  - id: wroclaw
+    company: Politechnika Wrocławska
+    start: 2020-06
+    end: 2020-07
+degrees:
+  - id: viu-ai
+    university: VIU - Universidad Internacional de Valencia
+    officialTitle: Master en Inteligencia Artificial
+    start: 2024-10
+    end: 2025-07
+  - id: oviedo
+    university: Universidad de Oviedo
+    officialTitle: Grado en Ingeniería, Informática
+    start: '2017'
+    end: '2021'

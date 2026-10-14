@@ -1,8 +1,39 @@
 title: Ingeniero de software e inteligencia artificial
-summary: ''
-skills: []
-experience: {}
-degrees: {}
+summary: Ingeniero de software e inteligencia artificial con experiencia en
+  Cleverdist, CERN y Merkle EMEA. Estudié ingeniería informática en la
+  Universidad de Oviedo e inteligencia artificial en la VIU. A través de
+  Erasmus+, participé en investigación sobre procesamiento del lenguaje natural
+  en la Universidad Politécnica de Wrocław.
+skills:
+  - group: Ingeniería de software
+    items:
+      - Desarrollo de software
+      - CTRL Language
+  - group: Inteligencia artificial
+    items:
+      - Inteligencia artificial
+      - Procesamiento del lenguaje natural
+      - Análisis heurístico
+experience:
+  cleverdist:
+    role: Programador informático
+    achievements: []
+  cern:
+    role: Programador y desarrollador de frameworks
+    achievements: []
+  merkle:
+    role: Programador analista
+    achievements: []
+  wroclaw:
+    role: Estudiante investigador
+    achievements:
+      - Participación en investigación sobre procesamiento del lenguaje natural
+        a través de Erasmus+.
+degrees:
+  viu-ai:
+    description: Estudios en inteligencia artificial.
+  oviedo:
+    description: Estudios de grado en ingeniería informática.
 ui:
   navLabel: Secciones del CV
   languageLabel: Elegir idioma
@@ -16,5 +47,5 @@ ui:
   download: Descargar CV
   present: Actualidad
   pending: Los detalles profesionales se añadirán tras revisar el CV original.
-  preview: Vista previa — contenido profesional pendiente de revisión
+  preview: Vista previa — contenido pendiente de tu revisión
   footer: Ingeniero de software e inteligencia artificial
