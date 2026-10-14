@@ -1,0 +1,36 @@
+# Publish after reviewing all three language versions.
+publishReady: false
+name: Sergio García Díaz
+links:
+  linkedin: https://www.linkedin.com/in/sergiogarc%C3%ADad%C3%ADaz/
+  github: https://github.com/sergady
+email: garcia.diaz.sergio.99@gmail.com
+location: Saint-Genis-Pouilly, France
+experience:
+  - id: cleverdist
+    company: Cleverdist
+    start: 2024-01
+    end: null
+  - id: cern
+    company: CERN
+    start: 2022-08
+    end: 2023-12
+  - id: merkle
+    company: Merkle EMEA
+    start: 2021-10
+    end: 2022-07
+  - id: wroclaw
+    company: Politechnika Wrocławska
+    start: 2020-06
+    end: 2020-07
+degrees:
+  - id: viu-ai
+    university: VIU - Universidad Internacional de Valencia
+    officialTitle: Master en Inteligencia Artificial
+    start: 2024-10
+    end: 2025-07
+  - id: oviedo
+    university: Universidad de Oviedo
+    officialTitle: Software Engineer
+    start: '2017'
+    end: '2021'

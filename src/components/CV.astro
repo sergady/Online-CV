@@ -1,0 +1,208 @@
+---
+import {
+  profile,
+  locales,
+  languages,
+  languageNames,
+  localePath,
+  base,
+  displayDate,
+  type Language,
+} from '../lib/content';
+import '../styles/cv.css';
+interface Props {
+  lang: Language;
+}
+const { lang } = Astro.props;
+const copy = locales[lang];
+const ui = copy.ui;
+const canonical = `https://sergady.github.io${localePath(lang)}`;
+const sections = ['summary', 'skills', 'experience', 'degrees', 'contact'];
+const experience = [...profile.experience].sort((a, b) =>
+  b.start.localeCompare(a.start),
+);
+const degrees = [...profile.degrees].sort((a, b) =>
+  b.start.localeCompare(a.start),
+);
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{profile.name} — {copy.title}</title>
+    <meta
+      name="description"
+      content={copy.summary || `${profile.name} — ${copy.title}`}
+    />
+    {!profile.publishReady && (
+      <meta name="robots" content="noindex, nofollow" />
+    )}
+    <link rel="canonical" href={canonical} />
+    {languages.map((language) => (
+      <link
+        rel="alternate"
+        hreflang={language}
+        href={`https://sergady.github.io${localePath(language)}`}
+      />
+    ))}
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href={`https://sergady.github.io${base}`}
+    />
+    <meta property="og:title" content={`${profile.name} — ${copy.title}`} />
+    <meta property="og:description" content={copy.summary || copy.title} />
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content={canonical} />
+    <link rel="icon" href={`${base}favicon.svg`} type="image/svg+xml" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">
+      {ui.skip}
+    </a>
+    {!profile.publishReady && <div class="draft-banner">{ui.preview}</div>}
+    <header class="topbar">
+      <a class="wordmark" href={localePath(lang)} aria-label={profile.name}>
+        SG<span>.</span>
+      </a>
+      <nav class="language-nav" aria-label={ui.languageLabel}>
+        {languages.map((language) => (
+          <a
+            href={localePath(language)}
+            lang={language}
+            hreflang={language}
+            aria-current={language === lang ? 'page' : undefined}
+          >
+            {languageNames[language]}
+          </a>
+        ))}
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero" aria-labelledby="name">
+        <p class="eyebrow">{copy.title}</p>
+        <h1 id="name">{profile.name}</h1>
+        {profile.location && <p class="location">{profile.location}</p>}
+        <div class="hero-actions">
+          <a class="button primary" href={`${base}cv-${lang}.pdf`} download>
+            {ui.download}
+            <span aria-hidden="true"> ↓</span>
+          </a>
+          <a class="text-link" href="#contact">
+            {ui.contact}
+            <span aria-hidden="true"> ↗</span>
+          </a>
+        </div>
+      </section>
+      <div class="cv-layout">
+        <nav class="section-nav" aria-label={ui.navLabel}>
+          {sections.map((section, index) => (
+            <a href={`#${section}`}>
+              <span aria-hidden="true">
+                {String(index + 1).padStart(2, '0')}
+              </span>
+              {ui[section]}
+            </a>
+          ))}
+        </nav>
+        <div class="cv-content">
+          <section id="summary" class="cv-section">
+            <h2>{ui.summary}</h2>
+            <p class:list={['summary', { pending: !copy.summary }]}>
+              {copy.summary || ui.pending}
+            </p>
+          </section>
+          <section id="skills" class="cv-section">
+            <h2>{ui.skills}</h2>
+            {copy.skills.length ? (
+              <div class="skill-groups">
+                {copy.skills.map((group) => (
+                  <div>
+                    <h3>{group.group}</h3>
+                    <ul class="skill-list">
+                      {group.items.map((item) => (
+                        <li>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <p class="pending">{ui.pending}</p>
+            )}
+          </section>
+          <section id="experience" class="cv-section">
+            <h2>{ui.experience}</h2>
+            {experience.length ? (
+              experience.map((entry) => (
+                <article class="entry">
+                  <p class="dates">
+                    {displayDate(entry.start, lang)} —{' '}
+                    {entry.end ? displayDate(entry.end, lang) : ui.present}
+                  </p>
+                  <h3>{copy.experience[entry.id].role}</h3>
+                  <p class="organization">{entry.company}</p>
+                  <ul class="achievements">
+                    {copy.experience[entry.id].achievements.map((item) => (
+                      <li>{item}</li>
+                    ))}
+                  </ul>
+                </article>
+              ))
+            ) : (
+              <p class="pending">{ui.pending}</p>
+            )}
+          </section>
+          <section id="degrees" class="cv-section">
+            <h2>{ui.degrees}</h2>
+            {degrees.length ? (
+              degrees.map((entry) => (
+                <article class="entry">
+                  <p class="dates">
+                    {displayDate(entry.start, lang)} —{' '}
+                    {entry.end ? displayDate(entry.end, lang) : ui.present}
+                  </p>
+                  <h3>{entry.officialTitle}</h3>
+                  <p class="organization">{entry.university}</p>
+                  {copy.degrees[entry.id].description && (
+                    <p>{copy.degrees[entry.id].description}</p>
+                  )}
+                </article>
+              ))
+            ) : (
+              <p class="pending">{ui.pending}</p>
+            )}
+          </section>
+          <section id="contact" class="cv-section contact-section">
+            <h2>{ui.contact}</h2>
+            <p>{ui.contactIntro}</p>
+            <ul class="contact-links">
+              {profile.email && (
+                <li>
+                  <a href={`mailto:${profile.email}`}>
+                    {profile.email}
+                    <span aria-hidden="true"> ↗</span>
+                  </a>
+                </li>
+              )}
+              {Object.entries(profile.links).map(([label, url]) => (
+                <li>
+                  <a href={url} rel="me">
+                    {label === 'linkedin' ? 'LinkedIn' : 'GitHub'}
+                    <span aria-hidden="true"> ↗</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <span>{profile.name}</span>
+      <span>{ui.footer}</span>
+    </footer>
+  </body>
+</html>
