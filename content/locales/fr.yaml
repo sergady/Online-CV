@@ -1,0 +1,20 @@
+title: Ingénieur logiciel et intelligence artificielle
+summary: ''
+skills: []
+experience: {}
+degrees: {}
+ui:
+  navLabel: Sections du CV
+  languageLabel: Choisir la langue
+  skip: Aller au contenu
+  summary: Profil
+  skills: Compétences
+  experience: Expérience
+  degrees: Formation
+  contact: Me contacter
+  contactIntro: Consultez mon profil professionnel ou découvrez mon travail.
+  download: Télécharger le CV
+  present: Aujourd’hui
+  pending: Les informations professionnelles seront ajoutées après vérification du CV source.
+  preview: Aperçu — contenu professionnel en attente de vérification
+  footer: Ingénieur logiciel et intelligence artificielle

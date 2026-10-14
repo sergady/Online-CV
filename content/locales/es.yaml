@@ -1,0 +1,20 @@
+title: Ingeniero de software e inteligencia artificial
+summary: ''
+skills: []
+experience: {}
+degrees: {}
+ui:
+  navLabel: Secciones del CV
+  languageLabel: Elegir idioma
+  skip: Saltar al contenido
+  summary: Perfil
+  skills: Competencias
+  experience: Experiencia
+  degrees: Formación
+  contact: Contacto
+  contactIntro: Consulta mi perfil profesional o explora mi trabajo.
+  download: Descargar CV
+  present: Actualidad
+  pending: Los detalles profesionales se añadirán tras revisar el CV original.
+  preview: Vista previa — contenido profesional pendiente de revisión
+  footer: Ingeniero de software e inteligencia artificial

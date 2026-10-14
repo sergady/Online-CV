@@ -1,0 +1,29 @@
+title: Software and AI Engineer
+summary: ''
+skills: []
+# Add one translation per shared experience/degree ID.
+# experience:
+#   employer-role:
+#     role: Software Engineer
+#     achievements:
+#       - A verified responsibility or achievement.
+# degrees:
+#   university-degree:
+#     description: Optional explanation of the official degree.
+experience: {}
+degrees: {}
+ui:
+  navLabel: CV sections
+  languageLabel: Choose language
+  skip: Skip to content
+  summary: Profile
+  skills: Expertise
+  experience: Experience
+  degrees: Education
+  contact: Get in touch
+  contactIntro: View my professional profile or explore my work.
+  download: Download CV
+  present: Present
+  pending: Career details will be added after reviewing the source CV.
+  preview: Draft preview — career content pending review
+  footer: Software and AI Engineer

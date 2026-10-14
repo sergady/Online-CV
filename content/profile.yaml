@@ -1,0 +1,23 @@
+# Only set publishReady to true after all three language versions are reviewed.
+publishReady: false
+name: Sergio García Díaz
+links:
+  linkedin: https://www.linkedin.com/in/sergiogarc%C3%ADad%C3%ADaz/
+  github: https://github.com/sergady
+# Optional: add a public contact email or city/country here.
+email: ''
+location: ''
+# Entries use stable IDs shared by every language file.
+# experience:
+#   - id: employer-role
+#     company: Employer name
+#     start: "2022-03"
+#     end: null # null means current role
+# degrees:
+#   - id: university-degree
+#     university: University name
+#     officialTitle: Exact official degree title
+#     start: "2015"
+#     end: "2019"
+experience: []
+degrees: []
