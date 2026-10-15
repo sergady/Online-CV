@@ -270,6 +270,9 @@ footer {
   top: 10px;
 }
 @media (max-width: 760px) {
+  html {
+    scroll-padding-top: 6rem;
+  }
   main,
   .topbar,
   footer {
@@ -294,12 +297,20 @@ footer {
     gap: 0;
   }
   .section-nav {
-    position: static;
+    top: 0;
+    z-index: 1;
     display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    padding: 22px 0;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 16px;
+    padding: 12px 0;
+    background: var(--paper);
     border-bottom: 1px solid var(--line);
+  }
+  .section-nav a {
+    flex: 0 0 auto;
+    padding: 10px 2px;
+    white-space: nowrap;
   }
   .section-nav span {
     display: none;

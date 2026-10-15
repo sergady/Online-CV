@@ -53,3 +53,25 @@ test('Language navigation works with JavaScript disabled ', async ({
   await expect(page.locator('html')).toHaveAttribute('lang', 'fr');
   await context.close();
 });
+
+for (const version of versions) {
+  test(`${version.lang}: section navigation stays available when scrolling`, async ({
+    page,
+  }) => {
+    await page.emulateMedia({ reducedMotion: 'reduce' });
+    await page.goto(version.path);
+    await page.locator('#skills').scrollIntoViewIfNeeded();
+    const navigation = page.locator('.section-nav');
+    await expect(navigation).toBeInViewport();
+    await navigation.locator('a[href="#experience"]').click();
+    await expect(page).toHaveURL(/#experience$/);
+    const nav = await navigation.boundingBox();
+    const heading = await page.locator('#experience h2').boundingBox();
+    expect(nav).not.toBeNull();
+    expect(heading).not.toBeNull();
+    if (page.viewportSize()!.width <= 760) {
+      expect(nav!.y).toBeGreaterThanOrEqual(0);
+      expect(heading!.y).toBeGreaterThanOrEqual(nav!.y + nav!.height);
+    }
+  });
+}
