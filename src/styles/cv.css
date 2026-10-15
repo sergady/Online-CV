@@ -332,6 +332,103 @@ footer {
     font-size: 1.05rem;
   }
 }
+/* Keep the contrast treatment on screen; PDFs retain the light print layout. */
+@media screen {
+  :root {
+    --panel: #172b3a;
+    --panel-text: #fafaf7;
+    --panel-muted: #c4d0d8;
+    --gold: #d9b777;
+    --skills-paper: #edf1f3;
+  }
+  .hero {
+    max-width: none;
+    margin-block: 28px 40px;
+    padding: clamp(36px, 6vw, 72px);
+    background: var(--panel);
+    color: var(--panel-text);
+    border-radius: 6px;
+  }
+  .hero .eyebrow {
+    color: var(--gold);
+  }
+  .hero .location {
+    color: var(--panel-muted);
+  }
+  .hero-actions {
+    flex-wrap: wrap;
+  }
+  .hero .primary {
+    background: var(--gold);
+    color: var(--panel);
+  }
+  .hero .primary:hover {
+    background: #e7ca96;
+  }
+  .hero .text-link,
+  .contact-links a {
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+  }
+  .hero a:focus-visible,
+  .contact-section a:focus-visible {
+    outline-color: var(--gold);
+  }
+  .section-nav span {
+    color: var(--accent);
+    font-weight: 700;
+  }
+  #summary h2,
+  #skills h2,
+  .contact-section h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  #skills {
+    padding-inline: 28px;
+    background: var(--skills-paper);
+    border-radius: 6px;
+  }
+  .skill-groups h3 {
+    color: var(--accent);
+  }
+  .skill-list li {
+    background: white;
+    border-color: #c7d2da;
+  }
+  .contact-section {
+    padding-inline: 28px;
+    background: var(--panel);
+    color: var(--panel-text);
+    border-radius: 6px;
+  }
+  .contact-section > p {
+    color: var(--panel-muted);
+  }
+  .contact-links a {
+    color: var(--panel-text);
+    overflow-wrap: anywhere;
+  }
+  .contact-links li {
+    min-width: 0;
+  }
+  .contact-links a:hover {
+    color: var(--gold);
+  }
+}
+@media screen and (max-width: 760px) {
+  .hero {
+    margin-block: 20px 28px;
+    padding: 36px 24px;
+  }
+  .hero h1 {
+    font-size: clamp(2.5rem, 9vw, 4rem);
+  }
+  #skills,
+  .contact-section {
+    padding-inline: 20px;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
