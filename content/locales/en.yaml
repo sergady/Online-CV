@@ -1,10 +1,12 @@
 # Historical details from the older CV; current titles and dates follow LinkedIn.
 title: Software and AI Engineer
 summary: Software and AI Engineer with experience at Cleverdist, CERN, and
-  Merkle EMEA. My background includes frontend and backend development for SKY
-  UK, AI-based natural language processing research, and data preparation for
-  model training. I studied software engineering at the University of Oviedo and
-  artificial intelligence at VIU.
+  Merkle EMEA. My background includes full-stack development in different
+  work environments, AI-based natural language processing research, and data
+  preparation for model training. I studied software engineering at the University
+  of Oviedo and pursued a master's degree in artificial intelligence at VIU.
+  This education, combined with my professional experience, has equipped me to
+  adapt to a wide range of challenges.
 skills:
   - group: Programming languages
     items:
@@ -46,7 +48,6 @@ skills:
   - group: English qualifications
     items:
       - Cambridge Advanced — C1 (2017)
-      - Cambridge First Certificate — B2 (2016)
 experience:
   cleverdist:
     role: Software Developer
@@ -74,7 +75,9 @@ experience:
       - Implemented text analysis methods for NLP research.
 degrees:
   viu-ai:
-    description: Artificial intelligence studies at VIU, from October 2024 to July 2025.
+    description: Artificial intelligence studies at VIU, from October 2024 to
+      July 2025. There, I learned the fundamentals of how large language models
+      (LLMs) work, decision theory, and other AI-related skills.
   oviedo:
     description: Software engineering studies, including an Erasmus exchange in
       Poland (2019–2020), a collaborative game AI project, and a final-year

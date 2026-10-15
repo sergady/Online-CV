@@ -1,11 +1,13 @@
 # Historical details from the older CV; current titles and dates follow LinkedIn.
 title: Ingeniero de software e inteligencia artificial
 summary: Ingeniero de software e inteligencia artificial con experiencia en
-  Cleverdist, CERN y Merkle EMEA. Mi trayectoria incluye desarrollo frontend y
-  backend para SKY UK, investigación en procesamiento del lenguaje natural
-  basado en inteligencia artificial y preparación de datos para entrenar
-  modelos. Estudié ingeniería del software en la Universidad de Oviedo e
-  inteligencia artificial en la VIU.
+  Cleverdist, CERN y Merkle EMEA. Mi trayectoria incluye desarrollo full-stack
+  en distintos entornos de trabajo, investigación en procesamiento del lenguaje
+  natural basado en inteligencia artificial y preparación de datos para entrenar
+  modelos. Estudié ingeniería del software en la Universidad de Oviedo y cursé
+  un máster en inteligencia artificial en la VIU. Esta formación, junto con mi
+  experiencia profesional, me ha preparado para adaptarme a una amplia variedad
+  de retos.
 skills:
   - group: Lenguajes de programación
     items:
@@ -47,7 +49,6 @@ skills:
   - group: Certificaciones de inglés
     items:
       - Cambridge Advanced — C1 (2017)
-      - Cambridge First Certificate — B2 (2016)
 experience:
   cleverdist:
     role: Programador informático
@@ -78,9 +79,10 @@ experience:
         procesamiento del lenguaje natural.
 degrees:
   viu-ai:
-    description:
-      Estudios en inteligencia artificial en la VIU, de octubre de 2024 a
-      julio de 2025.
+    description: Estudios en inteligencia artificial en la VIU, de octubre de
+      2024 a julio de 2025. Allí aprendí los fundamentos del funcionamiento de los
+      grandes modelos de lenguaje (LLM), teoría de la decisión y otras competencias
+      relacionadas con la inteligencia artificial.
   oviedo:
     description:
       Estudios de ingeniería del software, con una estancia Erasmus en

@@ -2,10 +2,12 @@
 title: Ingénieur logiciel et intelligence artificielle
 summary: Ingénieur logiciel et intelligence artificielle, avec une expérience
   chez Cleverdist, au CERN et chez Merkle EMEA. Mon parcours comprend le
-  développement frontend et backend pour SKY UK, la recherche en traitement du
-  langage naturel fondé sur l’intelligence artificielle et la préparation de
-  données pour entraîner des modèles. J’ai étudié le génie logiciel à
-  l’Université d’Oviedo et l’intelligence artificielle à la VIU.
+  développement full-stack dans différents environnements de travail, la recherche
+  en traitement du langage naturel fondé sur l’intelligence artificielle et la
+  préparation de données pour entraîner des modèles. J’ai étudié le génie logiciel
+  à l’Université d’Oviedo et suivi un master en intelligence artificielle à la VIU.
+  Cette formation, associée à mon expérience professionnelle, m’a préparé à
+  m’adapter à une grande variété de défis.
 skills:
   - group: Langages de programmation
     items:
@@ -47,7 +49,6 @@ skills:
   - group: Certifications d’anglais
     items:
       - Cambridge Advanced — C1 (2017)
-      - Cambridge First Certificate — B2 (2016)
 experience:
   cleverdist:
     role: Développeur logiciel
@@ -79,7 +80,9 @@ experience:
 degrees:
   viu-ai:
     description: Études en intelligence artificielle à la VIU, d’octobre 2024 à
-      juillet 2025.
+      juillet 2025. J’y ai appris les principes fondamentaux du fonctionnement des
+      grands modèles de langage (LLM), la théorie de la décision et d’autres
+      compétences liées à l’intelligence artificielle.
   oviedo:
     description: Études en génie logiciel, avec un échange Erasmus en Pologne
       (2019–2020), un projet collaboratif d’intelligence artificielle pour un
